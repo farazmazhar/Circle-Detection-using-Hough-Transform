@@ -8,6 +8,7 @@ function [Ithreshold] = thresholding(I, threshold)
     Ithreshold = max(I,threshold);
     Ithreshold(Ithreshold==round(threshold))=0;
 
+	% Both of them work fine.
 %     Ithreshold = im2bw(Ithreshold);
     Ithreshold = mat2gray(Ithreshold);
 end

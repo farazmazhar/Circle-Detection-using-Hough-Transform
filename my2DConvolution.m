@@ -45,4 +45,5 @@ function [I] = my2DConvolution(I,M)
             I(i, j) = conv;
         end
     end
+end
     

@@ -26,20 +26,4 @@ function [sobelmerged, gradient] = sobelFilter(I)
             gradient(i+1,j+1) = atan(Ix/Iy);
         end
     end
-    
-    % Convolving.
-%     Ix = conv2(I, Gx); % Sobel vertical.
-%     Iy = conv2(I, Gy); % Sobel horizontal.
-
-%     Ix = edge(I,'Sobel', 185, 'horizontal');
-%     Iy = edge(I,'Sobel', 185, 'vertical');
-%     
-%     sobelmerged=sqrt(Ix.^2+Iy.^2);
-%     sobelmerged = edge(I,'Sobel');
-%     gradient = atan(Ix./Iy); % Returns in interval [-pi/2, pi/2].
-%     gradient = edge(I,'Sobel', 'both');
-%     atan2 interval = [-pi,pi].
-%     [sobelmerged, ~] = imgradient(I, 'sobel');
-%     gradient = deg2rad(gradient);
-     
 end

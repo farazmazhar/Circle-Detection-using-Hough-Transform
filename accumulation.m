@@ -36,6 +36,7 @@ function [A] = accumulation(minr, maxr, magnitude, gradient)
         end
     end
     figure, imshow(A);
-    A = lapOfGauss(A, 17);
+    A = lapOfGauss(A, 17);    
+    imwrite(A, 'D:\4.5coinsabspace.png');
     A(A < 1) = 0;
 end

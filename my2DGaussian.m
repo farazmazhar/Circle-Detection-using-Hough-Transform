@@ -19,3 +19,4 @@ function [M] = my2DGaussian(S)
         end
     end
     M = M/sum(M(:)); % Normalization.
+end

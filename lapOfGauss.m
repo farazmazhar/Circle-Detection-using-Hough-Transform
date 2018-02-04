@@ -17,7 +17,6 @@ function [Imexican] = lapOfGauss(I, S)
     end
     
     LoG = LoG/(sum(sum(LoG)));
-%     Imexican = convn(I, LoG);
 
     for i=1:size(I,1)-(S-1)
         for j=1:size(I,2)-(S-1)
